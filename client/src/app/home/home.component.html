@@ -1,0 +1,10 @@
+<div class="c">
+  <h4 class="">You're logged in with Angular 8 & JWT!!</h4>
+  <div class="">
+      <h6>Users from secure api end point</h6>
+      <div *ngIf="loading" class=""></div>
+      <ul *ngIf="users">
+          <li *ngFor="let user of users">{{user.firstName}} {{user.lastName}}</li>
+      </ul>
+  </div>
+</div>

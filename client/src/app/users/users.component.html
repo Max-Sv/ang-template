@@ -1,0 +1,22 @@
+<p>
+  users works!
+</p>
+<div>
+  <label for="inputId">set id </label>
+  <input name="inputId" type="text" [formControl]="userId">
+</div>
+<button (click)="getUser()">
+  click
+</button>
+<p>user name: <span>{{currentUser?.name}}</span></p>
+<div>
+  <ng-container *ngIf="(appDataService.users$ | async); else elseTemplate">
+    <p>Users loaded</p>
+
+  </ng-container>
+  <ng-template #elseTemplate>
+    <p>loading...</p>
+  </ng-template>
+</div>
+
+
