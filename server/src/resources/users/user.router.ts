@@ -19,6 +19,7 @@ class UserRouter {
      */
     private _configure() {
         this._router.get('/', async (req: Request, res: Response, next: NextFunction) => {
+            console.log('222:', 222)
             try {
                 const result = await this._service.getAll();
                 console.log('result:', result)
@@ -36,6 +37,14 @@ class UserRouter {
                 next(error);
             }
         });
+        // this._router.get('/:id', async (req: Request, res: Response, next: NextFunction) => {
+        //     try {
+        //         const result = await this._service.get(req.params.id);
+        //         res.status(200).json(result);
+        //     } catch (error) {
+        //         next(error);
+        //     }
+        // });
     }
 }
 

@@ -12,6 +12,7 @@ class MasterRouter {
     }
 
     constructor() {
+        console.log('11:', 11)
         this._configure();
     }
 

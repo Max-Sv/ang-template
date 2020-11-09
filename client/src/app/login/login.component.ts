@@ -55,6 +55,9 @@ export class LoginComponent implements OnInit {
         }
       );
   }
+  test() {
+    this.authService.test();
+  }
 
 
 }

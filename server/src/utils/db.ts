@@ -13,13 +13,13 @@ const db = {
 
 const getAllEntities = (entity) => {
 
-    return new Promise(resolve => {
-        setTimeout(() => {
-            resolve(db[entity]);
-        }, 1000);
-    });
+    // return new Promise(resolve => {
+    //     setTimeout(() => {
+    //         resolve(db[entity]);
+    //     }, 1000);
+    // });
 
-    // return db[entity];
+    return db[entity];
 }
 const getEntity = (entity, id) => {
     return db[entity][id];

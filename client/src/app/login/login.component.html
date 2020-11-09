@@ -25,8 +25,13 @@
                   <span *ngIf="loading" class="">loading...</span>
                   Login
               </button>
+
               <div *ngIf="error" class="">{{error}}</div>
           </form>
+          <button (click)="test()" class="">
+
+            test
+        </button>
       </div>
   </div>
 </div>

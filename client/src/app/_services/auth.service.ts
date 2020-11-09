@@ -21,6 +21,18 @@ export class AuthService {
     return this.currentUserSubject.value;
   }
 
+  test() {
+    this.http.get(`http://127.0.0.1:5000/api/user`).subscribe(
+      user => {
+        console.log('user:', user);
+      }
+      ,
+      error => {
+        console.log('errorerro:', error);
+      }
+    );
+
+  }
   login(username: string, password: string) {
     return this.http.post<any>(`${environment.apiUrl}/users/authenticate`, { username, password })
       .pipe(map(user => {
