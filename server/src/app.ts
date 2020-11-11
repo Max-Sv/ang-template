@@ -21,6 +21,7 @@ class App {
     this.initializeRouters();
     this.initializeErrorHandling()
   }
+
   private initializeMiddlewares() {
     this.app.use(bodyParser.json());
     this.app.use(cors());
@@ -32,7 +33,7 @@ class App {
     this.app.use(errorMiddleware)
   }
   public listen() {
-    this.app.listen(this.port, () => logger.info(`> App listening on port ${this.port}`))
+    this.app.listen(this.port, () => logger.info(` App listening on port ${this.port}`))
   }
 }
 

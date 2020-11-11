@@ -14,6 +14,7 @@ const db = {
 })();
 
 const getAllEntities = (tableName) => {
+  // throw new HttpException(404, 'Post not found')
   return new Promise(resolve => {
     setTimeout(() => {
       resolve(db[tableName].filter(entity => entity));
@@ -28,9 +29,18 @@ const getEntity = (tableName, id) => {
     throw new HttpException(404, 'Post not found')
   }
   return db[entity][id];
-
+}
+const createEntity = (tableName, user) => {
+  const { id } = user;
+  db[tableName].push(user);
+  const entity = db[tableName].filter(entity => entity).filter(entity => entity.id === id)
+  if (entity.lengtn > 1) {
+    throw new HttpException(404, 'Post not found')
+  }
+  return entity;
 }
 export = {
   getAllEntities,
-  getEntity
+  getEntity,
+  createEntity
 }

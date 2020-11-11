@@ -1,20 +1,28 @@
-// const DB = require('../../utils/inMemoryDB');
-import db from '../../utils/db'
+import { NotFoundError, EntityExistsError } from '../../models/HttpException';
 
-// const NotFoundError = require('../../common/notFoundError');
 const TABLE_NAME = 'Users';
-// import User from './user.model';
+import User from './user.model';
 
-const getAll = async () => {
-    return await db.getAllEntities(TABLE_NAME);
-};
+const getAll = async () => User.find({})
 const get = async id => {
-    const user = await db.getEntity(TABLE_NAME, id);
+    const user = await User.findById(id);
     if (!user) {
-        throw new Error;
+        throw new NotFoundError(TABLE_NAME, { id });
     }
     return user;
 };
+const save = async user => {
+    try {
+        return await User.create(user);
+    } catch (error) {
+        if (error.code === 11000) {
+            throw new EntityExistsError(`${TABLE_NAME} with this username exists`)
+        } else {
+            throw error;
+        }
+    }
+}
+const update = async (id, user) =>
+    User.findOneAndUpdate({ _id: id }, { $set: user }, { new: true });
 
-
-export = { getAll, get };
+export = { getAll, get, save, update };

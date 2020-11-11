@@ -9,6 +9,12 @@ class UserService {
     get(id) {
         return userRepo.get(id);
     }
+    save(user) {
+        return userRepo.save(user);
+    }
+    update(id, user) {
+        return userRepo.update(id, user);
+    }
     // defaultMethod() {
     //     return {
     //         text: `You've reached the ${this.constructor.name} default method`
