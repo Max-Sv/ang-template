@@ -1,30 +1,14 @@
-// const { logger } = require('./common/logging');
-// const mongoose = require('mongoose');
-// const { PORT, MONGO_CONNECTION_STRING } = require('./common/config');
+import App from './app';
+import config from './common/config'
+import logger from './common/logger';
 
-// import app = require('./app');
-// import Server = require('./app');
-// mongoose.connect(MONGO_CONNECTION_STRING, {
-//   useNewUrlParser: true,
-//   useUnifiedTopology: true,
-//   useFindAndModify: false
-// });
+const app = new App(config.PORT);
+app.listen();
 
-// const db = mongoose.connection;
-
-// db.on('error', () => logger.error('MongoDB connection error:')).once(
-//   'open',
-//   () => {
-//     logger.info('Successfully connect to DB');
-//     app.listen(PORT, () =>
-//       logger.info(`App is running on http://localhost:${PORT}`)
-//     );
-//   }
-// );
-// async function bootstrap() {
-//     const server = new Server();
-//     // server.port
-//     await server.app.listen(server.port, () => console.log(`> Listening!! on port ${server.port}`));
-
-// }
-// bootstrap();
+process
+    .on('unhandledRejection', (reason: Error | any) => {
+        logger.error(`[Unhandled Rejection] ${reason.stack}`);
+    })
+    .on('uncaughtException', (err: Error) => {
+        logger.error(`[Unhandled Exception] ${err.stack}`);
+    });

@@ -13,8 +13,13 @@ export class HomeComponent implements OnInit {
   }
   ngOnInit(): void {
     this.loading = true;
+    // this.userService.getAllFake().pipe(first()).subscribe(users => {
+    //   console.log('users:', users);
+    //   this.loading = false;
+    //   this.users = users;
+    // });
     this.userService.getAll().pipe(first()).subscribe(users => {
-      console.log('users:', users);
+      console.log('users from back:', users);
       this.loading = false;
       this.users = users;
     });

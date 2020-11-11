@@ -10,8 +10,11 @@ import { User } from '../_models/user';
 export class UserService {
 
   constructor(private http: HttpClient) { }
-  getAll(): Observable<any> {
+  getAllFake(): Observable<any> {
     return this.http.get<Array<User>>(`${environment.apiUrl}/users`);
+  }
+  getAll(): Observable<any> {
+    return this.http.get<Array<User>>(`${environment.apiUrl}/api/user`);
   }
 
 }

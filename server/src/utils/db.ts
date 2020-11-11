@@ -1,31 +1,36 @@
+import HttpException from '../models/HttpException';
 import User from '../resources/users/user.model';
 const db = {
-    Users: [],
+  Users: [],
+  Boards: [],
 
 };
 (() => {
-    console.log('Creating test users');
-    for (let i = 0; i < 3; i++) {
-        const user = new User({ id: i, name: `user${i}` });
-        db.Users.push(user);
-    }
+  console.log('Creating test users');
+  for (let i = 0; i < 3; i++) {
+    const user = new User({ id: i, username: `user${i}`, password: 'test', firstName: 'Test', lastName: 'User' });
+    db.Users.push(user);
+  }
 })();
 
-const getAllEntities = (entity) => {
+const getAllEntities = (tableName) => {
+  return new Promise(resolve => {
+    setTimeout(() => {
+      resolve(db[tableName].filter(entity => entity));
+    }, 2000);
+  });
 
-    // return new Promise(resolve => {
-    //     setTimeout(() => {
-    //         resolve(db[entity]);
-    //     }, 1000);
-    // });
-
-    return db[entity];
+  // return db[entity];
 }
-const getEntity = (entity, id) => {
-    return db[entity][id];
+const getEntity = (tableName, id) => {
+  const entity = db[tableName].filter(entity => entity).filter(entity => entity.id === id)
+  if (entity.lengtn > 1) {
+    throw new HttpException(404, 'Post not found')
+  }
+  return db[entity][id];
 
 }
 export = {
-    getAllEntities,
-    getEntity
+  getAllEntities,
+  getEntity
 }
