@@ -1,6 +1,6 @@
 
 import { NextFunction, Request, Response, Router } from 'express';
-import CompanyService from './company.service';
+import CompanyService from '../services/company.service';
 
 class CompanyRouter {
     private _router = Router();

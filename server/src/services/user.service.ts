@@ -1,6 +1,6 @@
 
 // import ErrorHandler from '../../models/ErrorHandler';
-import userRepo from './user.repository';
+import userRepo from '../repositories/user.repository';
 class UserService {
     getAll() {
         const users = userRepo.getAll();
@@ -15,11 +15,7 @@ class UserService {
     update(id, user) {
         return userRepo.update(id, user);
     }
-    // defaultMethod() {
-    //     return {
-    //         text: `You've reached the ${this.constructor.name} default method`
-    //     };
-    // }
+
 }
 
 export = new UserService();

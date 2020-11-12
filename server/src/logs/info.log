@@ -442,3 +442,576 @@ Error: listen EADDRINUSE: address already in use :::5000
     at Object.save (/home/max/Work/rs/myApp/server/src/resources/users/user.repository.ts:19:19)
     at process._tickCallback (internal/process/next_tick.js:68:7);
 
+2020-11-11 17:51:50 [[32minfo[39m]: Successfully connect to DB
+2020-11-11 17:51:50 [[32minfo[39m]:  App listening on port 5000
+2020-11-11 18:12:30 [[32minfo[39m]: Successfully connect to DB
+2020-11-11 18:12:30 [[32minfo[39m]:  App listening on port 5000
+2020-11-12 12:47:13 [[31merror[39m]: uncaughtException: Mongoose.connect is not a function
+TypeError: Mongoose.connect is not a function
+    at Object.exports.connect (/home/max/Work/rs/myApp/server/src/database/database.ts:13:14)
+    at Object.<anonymous> (/home/max/Work/rs/myApp/server/src/server.ts:8:1)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Module.m._compile (/home/max/Work/rs/myApp/node_modules/ts-node/src/index.ts:1043:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Object.require.extensions.(anonymous function) [as .ts] (/home/max/Work/rs/myApp/node_modules/ts-node/src/index.ts:1046:12)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:831:12)
+    at main (/home/max/Work/rs/myApp/node_modules/ts-node/src/bin.ts:225:14)
+    at Object.<anonymous> (/home/max/Work/rs/myApp/node_modules/ts-node/src/bin.ts:512:3)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+2020-11-12 12:47:58 [[31merror[39m]: uncaughtException: Mongoose.connect is not a function
+TypeError: Mongoose.connect is not a function
+    at Object.exports.connect (/home/max/Work/rs/myApp/server/src/database/database.ts:13:14)
+    at Object.<anonymous> (/home/max/Work/rs/myApp/server/src/server.ts:8:1)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Module.m._compile (/home/max/Work/rs/myApp/node_modules/ts-node/src/index.ts:1043:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Object.require.extensions.(anonymous function) [as .ts] (/home/max/Work/rs/myApp/node_modules/ts-node/src/index.ts:1046:12)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:831:12)
+    at main (/home/max/Work/rs/myApp/node_modules/ts-node/src/bin.ts:225:14)
+    at Object.<anonymous> (/home/max/Work/rs/myApp/node_modules/ts-node/src/bin.ts:512:3)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+2020-11-12 12:49:35 [[31merror[39m]: uncaughtException: ⨯ Unable to compile TypeScript:
+[96mserver/src/database/database.ts[0m:[93m10[0m:[93m9[0m - [91merror[0m[90m TS7030: [0mNot all code paths return a value.
+
+[7m10[0m         return;
+[7m  [0m [91m        ~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96mserver/src/database/database.ts[0m:[93m10[0m:[93m9[0m - [91merror[0m[90m TS7030: [0mNot all code paths return a value.
+
+[7m10[0m         return;
+[7m  [0m [91m        ~~~~~~~[0m
+
+    at createTSError (/home/max/Work/rs/myApp/node_modules/ts-node/src/index.ts:500:12)
+    at reportTSError (/home/max/Work/rs/myApp/node_modules/ts-node/src/index.ts:504:19)
+    at getOutput (/home/max/Work/rs/myApp/node_modules/ts-node/src/index.ts:739:36)
+    at Object.compile (/home/max/Work/rs/myApp/node_modules/ts-node/src/index.ts:955:32)
+    at Module.m._compile (/home/max/Work/rs/myApp/node_modules/ts-node/src/index.ts:1043:43)
+    at Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Object.require.extensions.(anonymous function) [as .ts] (/home/max/Work/rs/myApp/node_modules/ts-node/src/index.ts:1046:12)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/max/Work/rs/myApp/server/src/server.ts:4:1)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Module.m._compile (/home/max/Work/rs/myApp/node_modules/ts-node/src/index.ts:1043:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+2020-11-12 12:49:40 [[31merror[39m]: uncaughtException: ⨯ Unable to compile TypeScript:
+[96mserver/src/database/database.ts[0m:[93m10[0m:[93m9[0m - [91merror[0m[90m TS7030: [0mNot all code paths return a value.
+
+[7m10[0m         return;
+[7m  [0m [91m        ~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96mserver/src/database/database.ts[0m:[93m10[0m:[93m9[0m - [91merror[0m[90m TS7030: [0mNot all code paths return a value.
+
+[7m10[0m         return;
+[7m  [0m [91m        ~~~~~~~[0m
+
+    at createTSError (/home/max/Work/rs/myApp/node_modules/ts-node/src/index.ts:500:12)
+    at reportTSError (/home/max/Work/rs/myApp/node_modules/ts-node/src/index.ts:504:19)
+    at getOutput (/home/max/Work/rs/myApp/node_modules/ts-node/src/index.ts:739:36)
+    at Object.compile (/home/max/Work/rs/myApp/node_modules/ts-node/src/index.ts:955:32)
+    at Module.m._compile (/home/max/Work/rs/myApp/node_modules/ts-node/src/index.ts:1043:43)
+    at Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Object.require.extensions.(anonymous function) [as .ts] (/home/max/Work/rs/myApp/node_modules/ts-node/src/index.ts:1046:12)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/max/Work/rs/myApp/server/src/server.ts:4:1)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Module.m._compile (/home/max/Work/rs/myApp/node_modules/ts-node/src/index.ts:1043:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+2020-11-12 12:49:54 [[31merror[39m]: uncaughtException: ⨯ Unable to compile TypeScript:
+[96mserver/src/database/database.ts[0m:[93m10[0m:[93m9[0m - [91merror[0m[90m TS7030: [0mNot all code paths return a value.
+
+[7m10[0m         return;
+[7m  [0m [91m        ~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96mserver/src/database/database.ts[0m:[93m10[0m:[93m9[0m - [91merror[0m[90m TS7030: [0mNot all code paths return a value.
+
+[7m10[0m         return;
+[7m  [0m [91m        ~~~~~~~[0m
+
+    at createTSError (/home/max/Work/rs/myApp/node_modules/ts-node/src/index.ts:500:12)
+    at reportTSError (/home/max/Work/rs/myApp/node_modules/ts-node/src/index.ts:504:19)
+    at getOutput (/home/max/Work/rs/myApp/node_modules/ts-node/src/index.ts:739:36)
+    at Object.compile (/home/max/Work/rs/myApp/node_modules/ts-node/src/index.ts:955:32)
+    at Module.m._compile (/home/max/Work/rs/myApp/node_modules/ts-node/src/index.ts:1043:43)
+    at Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Object.require.extensions.(anonymous function) [as .ts] (/home/max/Work/rs/myApp/node_modules/ts-node/src/index.ts:1046:12)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/max/Work/rs/myApp/server/src/server.ts:4:1)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Module.m._compile (/home/max/Work/rs/myApp/node_modules/ts-node/src/index.ts:1043:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+2020-11-12 12:50:08 [[31merror[39m]: uncaughtException: Mongoose.connect is not a function
+TypeError: Mongoose.connect is not a function
+    at Object.exports.connect (/home/max/Work/rs/myApp/server/src/database/database.ts:13:14)
+    at Object.<anonymous> (/home/max/Work/rs/myApp/server/src/server.ts:8:1)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Module.m._compile (/home/max/Work/rs/myApp/node_modules/ts-node/src/index.ts:1043:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Object.require.extensions.(anonymous function) [as .ts] (/home/max/Work/rs/myApp/node_modules/ts-node/src/index.ts:1046:12)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:831:12)
+    at main (/home/max/Work/rs/myApp/node_modules/ts-node/src/bin.ts:225:14)
+    at Object.<anonymous> (/home/max/Work/rs/myApp/node_modules/ts-node/src/bin.ts:512:3)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+2020-11-12 12:51:14 [[31merror[39m]: uncaughtException: Mongoose.connect is not a function
+TypeError: Mongoose.connect is not a function
+    at Object.exports.connect (/home/max/Work/rs/myApp/server/src/server.ts:15:14)
+    at Object.<anonymous> (/home/max/Work/rs/myApp/server/src/server.ts:37:1)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Module.m._compile (/home/max/Work/rs/myApp/node_modules/ts-node/src/index.ts:1043:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Object.require.extensions.(anonymous function) [as .ts] (/home/max/Work/rs/myApp/node_modules/ts-node/src/index.ts:1046:12)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:831:12)
+    at main (/home/max/Work/rs/myApp/node_modules/ts-node/src/bin.ts:225:14)
+    at Object.<anonymous> (/home/max/Work/rs/myApp/node_modules/ts-node/src/bin.ts:512:3)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+2020-11-12 12:51:52 [[31merror[39m]: uncaughtException: Mongoose.connect is not a function
+TypeError: Mongoose.connect is not a function
+    at Object.exports.connect (/home/max/Work/rs/myApp/server/src/database/database.ts:13:14)
+    at Object.<anonymous> (/home/max/Work/rs/myApp/server/src/server.ts:8:1)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Module.m._compile (/home/max/Work/rs/myApp/node_modules/ts-node/src/index.ts:1043:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Object.require.extensions.(anonymous function) [as .ts] (/home/max/Work/rs/myApp/node_modules/ts-node/src/index.ts:1046:12)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:831:12)
+    at main (/home/max/Work/rs/myApp/node_modules/ts-node/src/bin.ts:225:14)
+    at Object.<anonymous> (/home/max/Work/rs/myApp/node_modules/ts-node/src/bin.ts:512:3)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+2020-11-12 12:53:06 [[31merror[39m]: uncaughtException: ⨯ Unable to compile TypeScript:
+[96mserver/src/database/database.ts[0m:[93m2[0m:[93m1[0m - [91merror[0m[90m TS6133: [0m'config' is declared but its value is never read.
+
+[7m2[0m import config from '../common/config'
+[7m [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96mserver/src/database/database.ts[0m:[93m2[0m:[93m1[0m - [91merror[0m[90m TS6133: [0m'config' is declared but its value is never read.
+
+[7m2[0m import config from '../common/config'
+[7m [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+    at createTSError (/home/max/Work/rs/myApp/node_modules/ts-node/src/index.ts:500:12)
+    at reportTSError (/home/max/Work/rs/myApp/node_modules/ts-node/src/index.ts:504:19)
+    at getOutput (/home/max/Work/rs/myApp/node_modules/ts-node/src/index.ts:739:36)
+    at Object.compile (/home/max/Work/rs/myApp/node_modules/ts-node/src/index.ts:955:32)
+    at Module.m._compile (/home/max/Work/rs/myApp/node_modules/ts-node/src/index.ts:1043:43)
+    at Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Object.require.extensions.(anonymous function) [as .ts] (/home/max/Work/rs/myApp/node_modules/ts-node/src/index.ts:1046:12)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/max/Work/rs/myApp/server/src/server.ts:4:1)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Module.m._compile (/home/max/Work/rs/myApp/node_modules/ts-node/src/index.ts:1043:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+2020-11-12 12:53:15 [[31merror[39m]: uncaughtException: Cannot read property 'once' of undefined
+TypeError: Cannot read property 'once' of undefined
+    at Object.exports.connect (/home/max/Work/rs/myApp/server/src/database/database.ts:22:14)
+    at Object.<anonymous> (/home/max/Work/rs/myApp/server/src/server.ts:8:1)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Module.m._compile (/home/max/Work/rs/myApp/node_modules/ts-node/src/index.ts:1043:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Object.require.extensions.(anonymous function) [as .ts] (/home/max/Work/rs/myApp/node_modules/ts-node/src/index.ts:1046:12)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:831:12)
+    at main (/home/max/Work/rs/myApp/node_modules/ts-node/src/bin.ts:225:14)
+    at Object.<anonymous> (/home/max/Work/rs/myApp/node_modules/ts-node/src/bin.ts:512:3)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+2020-11-12 12:54:53 [[31merror[39m]: uncaughtException: ⨯ Unable to compile TypeScript:
+[96mserver/src/database/database.ts[0m:[93m41[0m:[93m1[0m - [91merror[0m[90m TS7027: [0mUnreachable code detected.
+
+[7m 41[0m export const disconnect = () => {
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m 42[0m     if (!database) {
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~[0m
+[7m...[0m 
+[7m 46[0m     Mongoose.disconnect();
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m 47[0m };
+[7m   [0m [91m~~[0m
+[96mserver/src/database/database.ts[0m:[93m4[0m:[93m1[0m - [91merror[0m[90m TS6133: [0m'UserModel' is declared but its value is never read.
+
+[7m4[0m import { UserModel } from './users/users.model';
+[7m [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[96mserver/src/database/database.ts[0m:[93m8[0m:[93m24[0m - [91merror[0m[90m TS7030: [0mNot all code paths return a value.
+
+[7m8[0m export const connect = () => {
+[7m [0m [91m                       ~~~~~~~[0m
+[96mserver/src/database/database.ts[0m:[93m33[0m:[93m63[0m - [91merror[0m[90m TS2304: [0mCannot find name 'PORT'.
+
+[7m33[0m             logger.info(`App is running on http://localhost:${PORT}`)
+[7m  [0m [91m                                                              ~~~~[0m
+[96mserver/src/database/database.ts[0m:[93m34[0m:[93m11[0m - [91merror[0m[90m TS1128: [0mDeclaration or statement expected.
+
+[7m34[0m           );
+[7m  [0m [91m          ~[0m
+[96mserver/src/database/database.ts[0m:[93m40[0m:[93m1[0m - [91merror[0m[90m TS1128: [0mDeclaration or statement expected.
+
+[7m40[0m };
+[7m  [0m [91m~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96mserver/src/database/database.ts[0m:[93m41[0m:[93m1[0m - [91merror[0m[90m TS7027: [0mUnreachable code detected.
+
+[7m 41[0m export const disconnect = () => {
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m 42[0m     if (!database) {
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~[0m
+[7m...[0m 
+[7m 46[0m     Mongoose.disconnect();
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m 47[0m };
+[7m   [0m [91m~~[0m
+[96mserver/src/database/database.ts[0m:[93m4[0m:[93m1[0m - [91merror[0m[90m TS6133: [0m'UserModel' is declared but its value is never read.
+
+[7m4[0m import { UserModel } from './users/users.model';
+[7m [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[96mserver/src/database/database.ts[0m:[93m8[0m:[93m24[0m - [91merror[0m[90m TS7030: [0mNot all code paths return a value.
+
+[7m8[0m export const connect = () => {
+[7m [0m [91m                       ~~~~~~~[0m
+[96mserver/src/database/database.ts[0m:[93m33[0m:[93m63[0m - [91merror[0m[90m TS2304: [0mCannot find name 'PORT'.
+
+[7m33[0m             logger.info(`App is running on http://localhost:${PORT}`)
+[7m  [0m [91m                                                              ~~~~[0m
+[96mserver/src/database/database.ts[0m:[93m34[0m:[93m11[0m - [91merror[0m[90m TS1128: [0mDeclaration or statement expected.
+
+[7m34[0m           );
+[7m  [0m [91m          ~[0m
+[96mserver/src/database/database.ts[0m:[93m40[0m:[93m1[0m - [91merror[0m[90m TS1128: [0mDeclaration or statement expected.
+
+[7m40[0m };
+[7m  [0m [91m~[0m
+
+    at createTSError (/home/max/Work/rs/myApp/node_modules/ts-node/src/index.ts:500:12)
+    at reportTSError (/home/max/Work/rs/myApp/node_modules/ts-node/src/index.ts:504:19)
+    at getOutput (/home/max/Work/rs/myApp/node_modules/ts-node/src/index.ts:739:36)
+    at Object.compile (/home/max/Work/rs/myApp/node_modules/ts-node/src/index.ts:955:32)
+    at Module.m._compile (/home/max/Work/rs/myApp/node_modules/ts-node/src/index.ts:1043:43)
+    at Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Object.require.extensions.(anonymous function) [as .ts] (/home/max/Work/rs/myApp/node_modules/ts-node/src/index.ts:1046:12)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/max/Work/rs/myApp/server/src/server.ts:4:1)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Module.m._compile (/home/max/Work/rs/myApp/node_modules/ts-node/src/index.ts:1043:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+2020-11-12 12:55:06 [[31merror[39m]: uncaughtException: ⨯ Unable to compile TypeScript:
+[96mserver/src/database/database.ts[0m:[93m41[0m:[93m1[0m - [91merror[0m[90m TS7027: [0mUnreachable code detected.
+
+[7m 41[0m export const disconnect = () => {
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m 42[0m     if (!database) {
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~[0m
+[7m...[0m 
+[7m 46[0m     Mongoose.disconnect();
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m 47[0m };
+[7m   [0m [91m~~[0m
+[96mserver/src/database/database.ts[0m:[93m4[0m:[93m1[0m - [91merror[0m[90m TS6133: [0m'UserModel' is declared but its value is never read.
+
+[7m4[0m import { UserModel } from './users/users.model';
+[7m [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[96mserver/src/database/database.ts[0m:[93m8[0m:[93m24[0m - [91merror[0m[90m TS7030: [0mNot all code paths return a value.
+
+[7m8[0m export const connect = () => {
+[7m [0m [91m                       ~~~~~~~[0m
+[96mserver/src/database/database.ts[0m:[93m33[0m:[93m63[0m - [91merror[0m[90m TS2304: [0mCannot find name 'PORT'.
+
+[7m33[0m             logger.info(`App is running on http://localhost:${PORT}`)
+[7m  [0m [91m                                                              ~~~~[0m
+[96mserver/src/database/database.ts[0m:[93m34[0m:[93m11[0m - [91merror[0m[90m TS1128: [0mDeclaration or statement expected.
+
+[7m34[0m           );
+[7m  [0m [91m          ~[0m
+[96mserver/src/database/database.ts[0m:[93m35[0m:[93m2[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m35[0m })
+[7m  [0m [91m ~[0m
+[96mserver/src/database/database.ts[0m:[93m40[0m:[93m1[0m - [91merror[0m[90m TS1128: [0mDeclaration or statement expected.
+
+[7m40[0m };
+[7m  [0m [91m~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96mserver/src/database/database.ts[0m:[93m41[0m:[93m1[0m - [91merror[0m[90m TS7027: [0mUnreachable code detected.
+
+[7m 41[0m export const disconnect = () => {
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m 42[0m     if (!database) {
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~[0m
+[7m...[0m 
+[7m 46[0m     Mongoose.disconnect();
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m 47[0m };
+[7m   [0m [91m~~[0m
+[96mserver/src/database/database.ts[0m:[93m4[0m:[93m1[0m - [91merror[0m[90m TS6133: [0m'UserModel' is declared but its value is never read.
+
+[7m4[0m import { UserModel } from './users/users.model';
+[7m [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[96mserver/src/database/database.ts[0m:[93m8[0m:[93m24[0m - [91merror[0m[90m TS7030: [0mNot all code paths return a value.
+
+[7m8[0m export const connect = () => {
+[7m [0m [91m                       ~~~~~~~[0m
+[96mserver/src/database/database.ts[0m:[93m33[0m:[93m63[0m - [91merror[0m[90m TS2304: [0mCannot find name 'PORT'.
+
+[7m33[0m             logger.info(`App is running on http://localhost:${PORT}`)
+[7m  [0m [91m                                                              ~~~~[0m
+[96mserver/src/database/database.ts[0m:[93m34[0m:[93m11[0m - [91merror[0m[90m TS1128: [0mDeclaration or statement expected.
+
+[7m34[0m           );
+[7m  [0m [91m          ~[0m
+[96mserver/src/database/database.ts[0m:[93m35[0m:[93m2[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m35[0m })
+[7m  [0m [91m ~[0m
+[96mserver/src/database/database.ts[0m:[93m40[0m:[93m1[0m - [91merror[0m[90m TS1128: [0mDeclaration or statement expected.
+
+[7m40[0m };
+[7m  [0m [91m~[0m
+
+    at createTSError (/home/max/Work/rs/myApp/node_modules/ts-node/src/index.ts:500:12)
+    at reportTSError (/home/max/Work/rs/myApp/node_modules/ts-node/src/index.ts:504:19)
+    at getOutput (/home/max/Work/rs/myApp/node_modules/ts-node/src/index.ts:739:36)
+    at Object.compile (/home/max/Work/rs/myApp/node_modules/ts-node/src/index.ts:955:32)
+    at Module.m._compile (/home/max/Work/rs/myApp/node_modules/ts-node/src/index.ts:1043:43)
+    at Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Object.require.extensions.(anonymous function) [as .ts] (/home/max/Work/rs/myApp/node_modules/ts-node/src/index.ts:1046:12)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/max/Work/rs/myApp/server/src/server.ts:4:1)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Module.m._compile (/home/max/Work/rs/myApp/node_modules/ts-node/src/index.ts:1043:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+2020-11-12 12:55:24 [[31merror[39m]: uncaughtException: ⨯ Unable to compile TypeScript:
+[96mserver/src/database/database.ts[0m:[93m29[0m:[93m5[0m - [91merror[0m[90m TS2304: [0mCannot find name 'db'.
+
+[7m29[0m     db.on('error', () => logger.error('MongoDB connection error:')).once(
+[7m  [0m [91m    ~~[0m
+[96mserver/src/database/database.ts[0m:[93m33[0m:[93m13[0m - [91merror[0m[90m TS2304: [0mCannot find name 'app'.
+
+[7m33[0m             app.listen(PORT, () =>
+[7m  [0m [91m            ~~~[0m
+[96mserver/src/database/database.ts[0m:[93m33[0m:[93m24[0m - [91merror[0m[90m TS2304: [0mCannot find name 'PORT'.
+
+[7m33[0m             app.listen(PORT, () =>
+[7m  [0m [91m                       ~~~~[0m
+[96mserver/src/database/database.ts[0m:[93m34[0m:[93m67[0m - [91merror[0m[90m TS2304: [0mCannot find name 'PORT'.
+
+[7m34[0m                 logger.info(`App is running on http://localhost:${PORT}`)
+[7m  [0m [91m                                                                  ~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96mserver/src/database/database.ts[0m:[93m29[0m:[93m5[0m - [91merror[0m[90m TS2304: [0mCannot find name 'db'.
+
+[7m29[0m     db.on('error', () => logger.error('MongoDB connection error:')).once(
+[7m  [0m [91m    ~~[0m
+[96mserver/src/database/database.ts[0m:[93m33[0m:[93m13[0m - [91merror[0m[90m TS2304: [0mCannot find name 'app'.
+
+[7m33[0m             app.listen(PORT, () =>
+[7m  [0m [91m            ~~~[0m
+[96mserver/src/database/database.ts[0m:[93m33[0m:[93m24[0m - [91merror[0m[90m TS2304: [0mCannot find name 'PORT'.
+
+[7m33[0m             app.listen(PORT, () =>
+[7m  [0m [91m                       ~~~~[0m
+[96mserver/src/database/database.ts[0m:[93m34[0m:[93m67[0m - [91merror[0m[90m TS2304: [0mCannot find name 'PORT'.
+
+[7m34[0m                 logger.info(`App is running on http://localhost:${PORT}`)
+[7m  [0m [91m                                                                  ~~~~[0m
+
+    at createTSError (/home/max/Work/rs/myApp/node_modules/ts-node/src/index.ts:500:12)
+    at reportTSError (/home/max/Work/rs/myApp/node_modules/ts-node/src/index.ts:504:19)
+    at getOutput (/home/max/Work/rs/myApp/node_modules/ts-node/src/index.ts:739:36)
+    at Object.compile (/home/max/Work/rs/myApp/node_modules/ts-node/src/index.ts:955:32)
+    at Module.m._compile (/home/max/Work/rs/myApp/node_modules/ts-node/src/index.ts:1043:43)
+    at Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Object.require.extensions.(anonymous function) [as .ts] (/home/max/Work/rs/myApp/node_modules/ts-node/src/index.ts:1046:12)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/max/Work/rs/myApp/server/src/server.ts:4:1)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Module.m._compile (/home/max/Work/rs/myApp/node_modules/ts-node/src/index.ts:1043:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+2020-11-12 12:55:37 [[31merror[39m]: uncaughtException: Cannot read property 'on' of undefined
+TypeError: Cannot read property 'on' of undefined
+    at Object.exports.connect (/home/max/Work/rs/myApp/server/src/database/database.ts:29:14)
+    at Object.<anonymous> (/home/max/Work/rs/myApp/server/src/server.ts:8:1)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Module.m._compile (/home/max/Work/rs/myApp/node_modules/ts-node/src/index.ts:1043:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Object.require.extensions.(anonymous function) [as .ts] (/home/max/Work/rs/myApp/node_modules/ts-node/src/index.ts:1046:12)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:831:12)
+    at main (/home/max/Work/rs/myApp/node_modules/ts-node/src/bin.ts:225:14)
+    at Object.<anonymous> (/home/max/Work/rs/myApp/node_modules/ts-node/src/bin.ts:512:3)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+2020-11-12 12:56:05 [[32minfo[39m]:  App listening on port 5000
+2020-11-12 12:56:20 [[31merror[39m]: uncaughtException: ⨯ Unable to compile TypeScript:
+[96mserver/src/database/database.ts[0m:[93m13[0m:[93m22[0m - [91merror[0m[90m TS2304: [0mCannot find name 'config'.
+
+[7m13[0m     Mongoose.connect(config.MONGO_CONNECTION_STRING, {
+[7m  [0m [91m                     ~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96mserver/src/database/database.ts[0m:[93m13[0m:[93m22[0m - [91merror[0m[90m TS2304: [0mCannot find name 'config'.
+
+[7m13[0m     Mongoose.connect(config.MONGO_CONNECTION_STRING, {
+[7m  [0m [91m                     ~~~~~~[0m
+
+    at createTSError (/home/max/Work/rs/myApp/node_modules/ts-node/src/index.ts:500:12)
+    at reportTSError (/home/max/Work/rs/myApp/node_modules/ts-node/src/index.ts:504:19)
+    at getOutput (/home/max/Work/rs/myApp/node_modules/ts-node/src/index.ts:739:36)
+    at Object.compile (/home/max/Work/rs/myApp/node_modules/ts-node/src/index.ts:955:32)
+    at Module.m._compile (/home/max/Work/rs/myApp/node_modules/ts-node/src/index.ts:1043:43)
+    at Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Object.require.extensions.(anonymous function) [as .ts] (/home/max/Work/rs/myApp/node_modules/ts-node/src/index.ts:1046:12)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/max/Work/rs/myApp/server/src/server.ts:4:1)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Module.m._compile (/home/max/Work/rs/myApp/node_modules/ts-node/src/index.ts:1043:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+2020-11-12 12:56:29 [[32minfo[39m]:  App listening on port 5000
+2020-11-12 12:56:30 [[32minfo[39m]: Successfully connect to DB
+2020-11-12 12:56:40 [[32minfo[39m]:  App listening on port 5000
+2020-11-12 12:56:41 [[32minfo[39m]: Successfully connect to DB
+2020-11-12 12:56:48 [[32minfo[39m]:  App listening on port 5000
+2020-11-12 12:56:49 [[32minfo[39m]: Successfully connect to DB
+2020-11-12 13:04:40 [[32minfo[39m]:  App listening on port 5000
+2020-11-12 13:04:41 [[32minfo[39m]: Successfully connect to DB
+2020-11-12 13:07:51 [[32minfo[39m]:  App listening on port 5000
+2020-11-12 13:07:52 [[32minfo[39m]: Successfully connect to DB
+2020-11-12 13:08:41 [[32minfo[39m]:  App listening on port 5000
+2020-11-12 13:08:42 [[32minfo[39m]: Successfully connect to DB
+2020-11-12 13:08:47 [[32minfo[39m]:  App listening on port 5000
+2020-11-12 13:08:48 [[32minfo[39m]: Successfully connect to DB
+2020-11-12 13:12:37 [[32minfo[39m]:  App listening on port 5000
+2020-11-12 13:12:38 [[32minfo[39m]: Successfully connect to DB
+2020-11-12 13:12:59 [[32minfo[39m]:  App listening on port 5000
+2020-11-12 13:13:00 [[32minfo[39m]: Successfully connect to DB
+2020-11-12 13:13:35 [[32minfo[39m]:  App listening on port 5000
+2020-11-12 13:13:36 [[32minfo[39m]: Successfully connect to DB
+2020-11-12 13:13:50 [[32minfo[39m]:  App listening on port 5000
+2020-11-12 13:13:51 [[32minfo[39m]: Successfully connect to DB
+2020-11-12 13:14:57 [[32minfo[39m]:  App listening on port 5000
+2020-11-12 13:14:58 [[32minfo[39m]: Successfully connect to DB
+2020-11-12 13:18:03 [[32minfo[39m]:  App listening on port 5000
+2020-11-12 13:18:04 [[32minfo[39m]: Successfully connect to DB
+2020-11-12 13:18:29 [[32minfo[39m]:  App listening on port 5000
+2020-11-12 13:18:30 [[32minfo[39m]: Successfully connect to DB
+2020-11-12 13:25:07 [[32minfo[39m]:  App listening on port 5000
+2020-11-12 13:25:08 [[32minfo[39m]: Successfully connect to DB
+2020-11-12 13:25:22 [[32minfo[39m]:  App listening on port 5000
+2020-11-12 13:25:23 [[32minfo[39m]: Successfully connect to DB
+2020-11-12 14:08:13 [[32minfo[39m]:  App listening on port 5000
+2020-11-12 14:08:14 [[32minfo[39m]: Successfully connect to DB
+2020-11-12 14:10:38 [[32minfo[39m]:  App listening on port 5000
+2020-11-12 14:10:39 [[32minfo[39m]: Successfully connect to DB
+2020-11-12 14:32:33 [[32minfo[39m]:  App listening on port 5000
+2020-11-12 14:32:34 [[32minfo[39m]: Successfully connect to DB
+2020-11-12 14:32:53 [[32minfo[39m]:  App listening on port 5000
+2020-11-12 14:32:54 [[32minfo[39m]: Successfully connect to DB
+2020-11-12 14:34:05 [[32minfo[39m]:  App listening on port 5000
+2020-11-12 14:34:06 [[32minfo[39m]: Successfully connect to DB
+2020-11-12 14:41:45 [[32minfo[39m]:  App listening on port 5000
+2020-11-12 14:41:46 [[32minfo[39m]: Successfully connect to DB
+2020-11-12 14:42:31 [[32minfo[39m]:  App listening on port 5000
+2020-11-12 14:42:32 [[32minfo[39m]: Successfully connect to DB
+2020-11-12 14:42:44 [[32minfo[39m]:  App listening on port 5000
+2020-11-12 14:42:45 [[32minfo[39m]: Successfully connect to DB
+2020-11-12 14:43:22 [[32minfo[39m]:  App listening on port 5000
+2020-11-12 14:43:23 [[32minfo[39m]: Successfully connect to DB
+2020-11-12 14:43:35 [[32minfo[39m]:  App listening on port 5000
+2020-11-12 14:43:36 [[32minfo[39m]: Successfully connect to DB
+2020-11-12 14:44:30 [[32minfo[39m]:  App listening on port 5000
+2020-11-12 14:44:31 [[32minfo[39m]: Successfully connect to DB
+2020-11-12 14:45:34 [[32minfo[39m]:  App listening on port 5000
+2020-11-12 14:45:35 [[32minfo[39m]: Successfully connect to DB
+2020-11-12 14:46:14 [[32minfo[39m]:  App listening on port 5000
+2020-11-12 14:46:15 [[32minfo[39m]: Successfully connect to DB
+2020-11-12 14:57:04 [[32minfo[39m]:  App listening on port 5000
+2020-11-12 14:57:05 [[32minfo[39m]: Successfully connect to DB
+2020-11-12 14:57:11 [[32minfo[39m]:  App listening on port 5000
+2020-11-12 14:57:12 [[32minfo[39m]: Successfully connect to DB
+2020-11-12 15:00:26 [[32minfo[39m]:  App listening on port 5000
+2020-11-12 15:00:27 [[32minfo[39m]: Successfully connect to DB
+2020-11-12 15:00:49 [[32minfo[39m]:  App listening on port 5000
+2020-11-12 15:00:50 [[32minfo[39m]: Successfully connect to DB
+2020-11-12 15:17:44 [[32minfo[39m]:  App listening on port 5000
+2020-11-12 15:17:46 [[32minfo[39m]: Successfully connect to DB
+2020-11-12 15:18:15 [[32minfo[39m]:  App listening on port 5000
+2020-11-12 15:18:16 [[32minfo[39m]: Successfully connect to DB
+2020-11-12 15:25:42 [[32minfo[39m]:  App listening on port 5000
+2020-11-12 15:25:43 [[32minfo[39m]: Successfully connect to DB
+2020-11-12 15:26:37 [[32minfo[39m]:  App listening on port 5000
+2020-11-12 15:26:38 [[32minfo[39m]: Successfully connect to DB
+2020-11-12 15:28:41 [[32minfo[39m]:  App listening on port 5000
+2020-11-12 15:28:42 [[32minfo[39m]: Successfully connect to DB
+2020-11-12 15:31:29 [[32minfo[39m]:  App listening on port 5000
+2020-11-12 15:31:30 [[32minfo[39m]: Successfully connect to DB

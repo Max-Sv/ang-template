@@ -1,11 +1,11 @@
 import { Router } from 'express';
-import UserRouter from '../resources/users/user.router';
-import CompanyRouter from '../resources/companies/company.router';
+import UserRouter from './user.router';
+// import CompanyRouter from './company.router';
 
 class MasterRouter {
     private _router = Router();
     private _subrouterUser = UserRouter;
-    private _subrouterCompany = CompanyRouter;
+    // private _subrouterCompany = CompanyRouter;
 
     get router() {
         return this._router;
@@ -18,7 +18,7 @@ class MasterRouter {
 
     private _configure() {
         this._router.use('/user', this._subrouterUser);
-        this._router.use('/company', this._subrouterCompany);
+        // this._router.use('/company', this._subrouterCompany);
     }
 }
 

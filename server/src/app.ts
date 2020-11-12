@@ -2,7 +2,7 @@
 import cors from 'cors';
 import express, { Application } from 'express';
 
-import MasterRouter from './routers/MasterRouter';
+import MasterRouter from './routers/master.router';
 
 import bodyParser from 'body-parser';
 import logger from './common/logger';

@@ -1,8 +1,8 @@
 
 import { NextFunction, Request, Response, Router } from 'express';
 import { StatusCodes } from 'http-status-codes';
-import handleErrorAsync from '../../middleware/handleErrorAsync';
-import UserService from './user.service';
+import handleErrorAsync from '../middleware/handleErrorAsync';
+import UserService from '../services/user.service';
 
 class UserRouter {
     private _router = Router();
