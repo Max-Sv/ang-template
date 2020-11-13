@@ -1015,3 +1015,109 @@ TSError: ⨯ Unable to compile TypeScript:
 2020-11-12 15:28:42 [[32minfo[39m]: Successfully connect to DB
 2020-11-12 15:31:29 [[32minfo[39m]:  App listening on port 5000
 2020-11-12 15:31:30 [[32minfo[39m]: Successfully connect to DB
+2020-11-12 18:41:01 [[32minfo[39m]:  App listening on port 5000
+2020-11-12 18:41:01 [[31merror[39m]: uncaughtException: write EIO
+Error: write EIO
+    at afterWriteDispatched (internal/stream_base_commons.js:78:25)
+    at writeGeneric (internal/stream_base_commons.js:73:3)
+    at WriteStream.Socket._writeGeneric (net.js:714:5)
+    at WriteStream.Socket._write (net.js:726:8)
+    at doWrite (_stream_writable.js:415:12)
+    at writeOrBuffer (_stream_writable.js:399:5)
+    at WriteStream.Writable.write (_stream_writable.js:299:11)
+    at Console.log (/home/max/Work/rs/myApp/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/home/max/Work/rs/myApp/node_modules/winston-transport/index.js:82:19)
+    at doWrite (/home/max/Work/rs/myApp/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/home/max/Work/rs/myApp/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/home/max/Work/rs/myApp/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+    at DerivedLogger.ondata (/home/max/Work/rs/myApp/node_modules/readable-stream/lib/_stream_readable.js:681:20)
+    at DerivedLogger.emit (events.js:203:15)
+    at DerivedLogger.EventEmitter.emit (domain.js:448:20)
+    at addChunk (/home/max/Work/rs/myApp/node_modules/readable-stream/lib/_stream_readable.js:298:12)
+2020-11-12 18:41:01 [[31merror[39m]: [Unhandled Exception] Error: write EIO
+    at afterWriteDispatched (internal/stream_base_commons.js:78:25)
+    at writeGeneric (internal/stream_base_commons.js:73:3)
+    at WriteStream.Socket._writeGeneric (net.js:714:5)
+    at WriteStream.Socket._write (net.js:726:8)
+    at doWrite (_stream_writable.js:415:12)
+    at writeOrBuffer (_stream_writable.js:399:5)
+    at WriteStream.Writable.write (_stream_writable.js:299:11)
+    at Console.log (/home/max/Work/rs/myApp/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/home/max/Work/rs/myApp/node_modules/winston-transport/index.js:82:19)
+    at doWrite (/home/max/Work/rs/myApp/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/home/max/Work/rs/myApp/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/home/max/Work/rs/myApp/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+    at DerivedLogger.ondata (/home/max/Work/rs/myApp/node_modules/readable-stream/lib/_stream_readable.js:681:20)
+    at DerivedLogger.emit (events.js:203:15)
+    at DerivedLogger.EventEmitter.emit (domain.js:448:20)
+    at addChunk (/home/max/Work/rs/myApp/node_modules/readable-stream/lib/_stream_readable.js:298:12)
+2020-11-13 12:09:33 [[32minfo[39m]:  App listening on port 5000
+2020-11-13 12:09:34 [[32minfo[39m]: Successfully connect to DB
+2020-11-13 12:19:19 [[31merror[39m]: 
+code: 417;
+message: Users with this username exists;
+error-stack: Error: Users with this username exists
+    at Object.save (/home/max/Work/rs/myApp/server/src/repositories/user.repository.ts:25:19)
+    at process._tickCallback (internal/process/next_tick.js:68:7);
+
+2020-11-13 12:26:58 [[32minfo[39m]:  App listening on port 5000
+2020-11-13 12:26:59 [[32minfo[39m]: Successfully connect to DB
+2020-11-13 12:32:23 [[32minfo[39m]:  App listening on port 5000
+2020-11-13 12:32:24 [[32minfo[39m]: Successfully connect to DB
+2020-11-13 13:41:05 [[32minfo[39m]:  App listening on port 5000
+2020-11-13 13:41:06 [[32minfo[39m]: Successfully connect to DB
+2020-11-13 13:44:35 [[32minfo[39m]:  App listening on port 5000
+2020-11-13 13:44:36 [[32minfo[39m]: Successfully connect to DB
+2020-11-13 13:45:40 [[32minfo[39m]:  App listening on port 5000
+2020-11-13 13:45:41 [[32minfo[39m]: Successfully connect to DB
+2020-11-13 15:16:23 [[32minfo[39m]:  App listening on port 5000
+2020-11-13 15:16:24 [[32minfo[39m]: Successfully connect to DB
+2020-11-13 15:16:29 [[32minfo[39m]:  App listening on port 5000
+2020-11-13 15:16:29 [[32minfo[39m]: Successfully connect to DB
+2020-11-13 16:09:05 [[32minfo[39m]:  App listening on port 5000
+2020-11-13 16:09:07 [[32minfo[39m]: Successfully connect to DB
+2020-11-13 16:12:15 [[32minfo[39m]:  App listening on port 5000
+2020-11-13 16:12:16 [[32minfo[39m]: Successfully connect to DB
+2020-11-13 16:14:34 [[32minfo[39m]:  App listening on port 5000
+2020-11-13 16:14:38 [[32minfo[39m]:  App listening on port 5000
+2020-11-13 16:14:39 [[32minfo[39m]: Successfully connect to DB
+2020-11-13 16:15:01 [[32minfo[39m]:  App listening on port 5000
+2020-11-13 16:15:02 [[32minfo[39m]: Successfully connect to DB
+2020-11-13 16:15:08 [[32minfo[39m]:  App listening on port 5000
+2020-11-13 16:15:08 [[32minfo[39m]: Successfully connect to DB
+2020-11-13 16:16:07 [[32minfo[39m]:  App listening on port 5000
+2020-11-13 16:16:08 [[32minfo[39m]: Successfully connect to DB
+2020-11-13 16:16:59 [[32minfo[39m]:  App listening on port 5000
+2020-11-13 16:17:00 [[32minfo[39m]: Successfully connect to DB
+2020-11-13 16:20:01 [[32minfo[39m]:  App listening on port 5000
+2020-11-13 16:20:02 [[32minfo[39m]: Successfully connect to DB
+2020-11-13 16:29:15 [[32minfo[39m]:  App listening on port 5000
+2020-11-13 16:29:16 [[32minfo[39m]: Successfully connect to DB
+2020-11-13 16:29:24 [[32minfo[39m]:  App listening on port 5000
+2020-11-13 16:29:25 [[32minfo[39m]: Successfully connect to DB
+2020-11-13 16:37:58 [[32minfo[39m]:  App listening on port 5000
+2020-11-13 16:37:59 [[32minfo[39m]: Successfully connect to DB
+2020-11-13 16:42:39 [[32minfo[39m]:  App listening on port 5000
+2020-11-13 16:42:40 [[32minfo[39m]: Successfully connect to DB
+2020-11-13 16:43:28 [[32minfo[39m]:  App listening on port 5000
+2020-11-13 16:43:29 [[32minfo[39m]: Successfully connect to DB
+2020-11-13 16:43:51 [[32minfo[39m]:  App listening on port 5000
+2020-11-13 16:43:52 [[32minfo[39m]: Successfully connect to DB
+2020-11-13 16:46:51 [[32minfo[39m]:  App listening on port 5000
+2020-11-13 16:46:52 [[32minfo[39m]: Successfully connect to DB
+2020-11-13 16:49:08 [[32minfo[39m]:  App listening on port 5000
+2020-11-13 16:49:10 [[32minfo[39m]: Successfully connect to DB
+2020-11-13 16:49:20 [[32minfo[39m]:  App listening on port 5000
+2020-11-13 16:49:21 [[32minfo[39m]: Successfully connect to DB
+2020-11-13 16:56:14 [[32minfo[39m]:  App listening on port 5000
+2020-11-13 16:56:15 [[32minfo[39m]: Successfully connect to DB
+2020-11-13 16:59:31 [[32minfo[39m]:  App listening on port 5000
+2020-11-13 16:59:32 [[32minfo[39m]: Successfully connect to DB
+2020-11-13 17:52:04 [[32minfo[39m]:  App listening on port 5000
+2020-11-13 17:52:05 [[32minfo[39m]: Successfully connect to DB
+2020-11-13 17:52:18 [[32minfo[39m]:  App listening on port 5000
+2020-11-13 17:52:19 [[32minfo[39m]: Successfully connect to DB
+2020-11-13 17:53:14 [[32minfo[39m]:  App listening on port 5000
+2020-11-13 17:53:20 [[32minfo[39m]: Successfully connect to DB
+2020-11-13 17:53:35 [[32minfo[39m]:  App listening on port 5000
+2020-11-13 17:53:37 [[32minfo[39m]: Successfully connect to DB

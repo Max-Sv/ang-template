@@ -863,3 +863,45 @@ TSError: ⨯ Unable to compile TypeScript:
     at Module._compile (internal/modules/cjs/loader.js:778:30)
     at Module.m._compile (/home/max/Work/rs/myApp/node_modules/ts-node/src/index.ts:1043:23)
     at Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+2020-11-12 18:41:01 [[31merror[39m]: uncaughtException: write EIO
+Error: write EIO
+    at afterWriteDispatched (internal/stream_base_commons.js:78:25)
+    at writeGeneric (internal/stream_base_commons.js:73:3)
+    at WriteStream.Socket._writeGeneric (net.js:714:5)
+    at WriteStream.Socket._write (net.js:726:8)
+    at doWrite (_stream_writable.js:415:12)
+    at writeOrBuffer (_stream_writable.js:399:5)
+    at WriteStream.Writable.write (_stream_writable.js:299:11)
+    at Console.log (/home/max/Work/rs/myApp/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/home/max/Work/rs/myApp/node_modules/winston-transport/index.js:82:19)
+    at doWrite (/home/max/Work/rs/myApp/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/home/max/Work/rs/myApp/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/home/max/Work/rs/myApp/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+    at DerivedLogger.ondata (/home/max/Work/rs/myApp/node_modules/readable-stream/lib/_stream_readable.js:681:20)
+    at DerivedLogger.emit (events.js:203:15)
+    at DerivedLogger.EventEmitter.emit (domain.js:448:20)
+    at addChunk (/home/max/Work/rs/myApp/node_modules/readable-stream/lib/_stream_readable.js:298:12)
+2020-11-12 18:41:01 [[31merror[39m]: [Unhandled Exception] Error: write EIO
+    at afterWriteDispatched (internal/stream_base_commons.js:78:25)
+    at writeGeneric (internal/stream_base_commons.js:73:3)
+    at WriteStream.Socket._writeGeneric (net.js:714:5)
+    at WriteStream.Socket._write (net.js:726:8)
+    at doWrite (_stream_writable.js:415:12)
+    at writeOrBuffer (_stream_writable.js:399:5)
+    at WriteStream.Writable.write (_stream_writable.js:299:11)
+    at Console.log (/home/max/Work/rs/myApp/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/home/max/Work/rs/myApp/node_modules/winston-transport/index.js:82:19)
+    at doWrite (/home/max/Work/rs/myApp/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/home/max/Work/rs/myApp/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/home/max/Work/rs/myApp/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+    at DerivedLogger.ondata (/home/max/Work/rs/myApp/node_modules/readable-stream/lib/_stream_readable.js:681:20)
+    at DerivedLogger.emit (events.js:203:15)
+    at DerivedLogger.EventEmitter.emit (domain.js:448:20)
+    at addChunk (/home/max/Work/rs/myApp/node_modules/readable-stream/lib/_stream_readable.js:298:12)
+2020-11-13 12:19:19 [[31merror[39m]: 
+code: 417;
+message: Users with this username exists;
+error-stack: Error: Users with this username exists
+    at Object.save (/home/max/Work/rs/myApp/server/src/repositories/user.repository.ts:25:19)
+    at process._tickCallback (internal/process/next_tick.js:68:7);
+

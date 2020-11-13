@@ -1,19 +1,21 @@
 
-// import ErrorHandler from '../../models/ErrorHandler';
-import userRepo from '../repositories/user.repository';
+import * as userRepo from '../repositories/user.repository';
 class UserService {
-    getAll() {
-        const users = userRepo.getAll();
-        return users;
+    private _repository = userRepo;
+    public getAll() {
+        return this._repository.getAll();
     }
-    get(id) {
-        return userRepo.get(id);
+    public get(id) {
+        return this._repository.get(id);
     }
-    save(user) {
-        return userRepo.save(user);
+    public save(user) {
+        return this._repository.save(user);
     }
-    update(id, user) {
-        return userRepo.update(id, user);
+    public remove(id) {
+        return this._repository.remove(id);
+    }
+    public update(id, user) {
+        return this._repository.update(id, user);
     }
 
 }

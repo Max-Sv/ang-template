@@ -1,6 +1,6 @@
 
 import cors from 'cors';
-import express, { Application } from 'express';
+import express, { Application, IRouter } from 'express';
 
 import MasterRouter from './routers/master.router';
 
@@ -12,11 +12,11 @@ import errorMiddleware from './middleware/error.middleware';
 class App {
   public app: Application;
   public port: number;
-  public router = MasterRouter;
+  public router: IRouter;
   constructor(port) {
     this.app = express();
     this.port = port;
-
+    this.router = MasterRouter;
     this.initializeMiddlewares();
     this.initializeRouters();
     this.initializeErrorHandling()

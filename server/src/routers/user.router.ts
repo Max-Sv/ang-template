@@ -16,19 +16,15 @@ class UserRouter {
         this._configure();
     }
 
-    /**
-     * Connect routes to their matching controller endpoints.
-     */
     private _configure() {
         this._router.get('/', handleErrorAsync(async (req: Request, res: Response, next: NextFunction) => {
             const result = await this._service.getAll();
-            console.log('result:', result)
-            res.status(200).json(result);
+            res.status(StatusCodes.OK).json(result);
         }));
         this._router.get('/:id', async (req: Request, res: Response, next: NextFunction) => {
             try {
                 const result = await this._service.get(req.params.id);
-                res.status(200).json(result);
+                res.status(StatusCodes.OK).json(result);
             } catch (error) {
                 next(error);
             }
@@ -40,6 +36,11 @@ class UserRouter {
         }))
         this._router.put('/:id', handleErrorAsync(async (req: Request, res: Response, next: NextFunction) => {
             const user = await this._service.update(req.params.id, req.body);
+            console.log('user:', user)
+            res.status(StatusCodes.OK).send(user);
+        }))
+        this._router.delete('/:id', handleErrorAsync(async (req: Request, res: Response, next: NextFunction) => {
+            const user = await this._service.remove(req.params.id);
             console.log('user:', user)
             res.status(StatusCodes.OK).send(user);
         }))

@@ -8,6 +8,11 @@ export interface IUser {
     dateOfEntry?: Date;
     lastUpdated?: Date;
 }
+export interface IUserToResponce {
+    username: string,
+    firstName: string;
+    lastName: string;
+}
 export interface IUserDocument extends IUser, Document {
     setLastUpdated: (this: IUserDocument) => Promise<void>;
     sameLastName: (this: IUserDocument) => Promise<Document[]>;
